@@ -1,0 +1,19 @@
+name       : jpilot
+version    : 1.8.2
+release    : 1
+source     :
+    - http://jpilot.org/jpilot-1.8.2.tar.gz : 2c28ed7acea27ae3d541036f2e2ca5ed7e0121badf477e3cfa5ec8d282337e23
+license    : GPL-2.0
+summary    : J-Pilot Desktop Organiser
+description: |
+    J-Pilot is a desktop organizer application for PalmOS devices. It is meant to be an alternative to the Palm Desktop for those who run the most popular Operating Systems in the World, Linux and Unix.
+builddeps  :
+    - pkgconfig(gtk+-2.0)
+    - pkgconfig(pilot-link)
+    - pkgconfig(openssl)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
