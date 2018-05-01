@@ -2,10 +2,11 @@
     <Source>
         <Name>jpilot</Name>
         <Packager>
-            <Name>Justin Zobel</Name>
-            <Email>justin@solus-project.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
-        <License>GPL-2.0</License>
+        <License>GPL-2.0-or-later</License>
+        <PartOf>desktop</PartOf>
         <Summary xml:lang="en">J-Pilot Desktop Organiser</Summary>
         <Description xml:lang="en">J-Pilot is a desktop organizer application for PalmOS devices. It is meant to be an alternative to the Palm Desktop for those who run the most popular Operating Systems in the World, Linux and Unix.
 </Description>
@@ -18,22 +19,24 @@
 </Description>
         <PartOf>desktop</PartOf>
         <Files>
-            <Path fileType="man">/usr/share/man</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/jpilot</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib64/jpilot</Path>
+            <Path fileType="library">/usr/lib64/jpilot/plugins/libexpense.so</Path>
+            <Path fileType="library">/usr/lib64/jpilot/plugins/libkeyring.so</Path>
+            <Path fileType="library">/usr/lib64/jpilot/plugins/libsynctime.so</Path>
+            <Path fileType="data">/usr/share/applications/jpilot.desktop</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/jpilot</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2015-11-12</Date>
+        <Update release="2">
+            <Date>2018-04-30</Date>
             <Version>1.8.2</Version>
             <Comment>Packaging update</Comment>
-            <Name>Justin Zobel</Name>
-            <Email>justin@solus-project.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>
